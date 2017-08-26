@@ -1,0 +1,11 @@
+#web
+server.port: 10000
+#mongo
+spring.data.mongodb.host: 192.168.99.100
+spring.data.mongodb.port: 32777
+spring.data.mongodb.database: user
+#charset
+spring.http.encoding.force: true
+spring.http.encoding.charset: UTF-8
+spring.http.encoding.enabled: true
+server.tomcat.uri-encoding: UTF-8
