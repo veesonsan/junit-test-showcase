@@ -1,5 +1,7 @@
 package com.midea.junit.test.util;
 
+import org.springframework.util.StringUtils;
+
 import com.midea.junit.test.domain.ErrorCodeEnum;
 import com.midea.junit.test.exceptions.BusinessException;
 
@@ -13,7 +15,7 @@ public class AssertUtil {
 	 * @author Yushun.Qin on 2017年8月26日 上午9:12:12
 	 */
 	public static void notEmpty(String string) {
-		if (string == null || string.trim().length() == 0) {
+		if (StringUtils.isEmpty(string)) {
 			throw new BusinessException(ErrorCodeEnum.PARAM_ERROR);
 		}
 

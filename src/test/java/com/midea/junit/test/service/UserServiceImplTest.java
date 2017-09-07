@@ -84,7 +84,6 @@ public class UserServiceImplTest {
 		// 3.校验结果
 		User userDb = userService.findUserById(user.getId());
 		assertEquals(userDb, user);
-		assertEquals(userDb.getAge(), new Integer(AGE));
 
 		// 4.清除测试数据
 		userRepository.delete(user.getId());
